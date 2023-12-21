@@ -1,0 +1,163 @@
+:root{
+    --background: #111317;
+    --second-color: #393e46; 
+    --third-color: #f96d00; 
+    --fourth-color: #f2f2f2; 
+}
+
+.edit{
+    background: none;
+    border: none;
+    outline: none;
+    width: 300px;
+    color: var(--fourth-color);
+    cursor: pointer;
+}
+
+.name-edit{
+    font-size: 2rem;
+}
+
+.edit:focus,.edit:hover{
+    border-bottom: 1px solid var(--third-color);
+}
+
+.faculty{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.faculty h4{
+    position: relative;
+    bottom: -4px;
+}
+
+.faculty select {
+    margin-left: 22px;
+    font-size: 1.3rem;
+}
+
+.branch{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.branch h4{
+    position: relative;
+    bottom: -4px;
+}
+
+.branch select {
+    margin-left: 15px;
+    font-size: 1.3rem;
+}
+
+.years , .status , .sex{
+    width: 100px;
+}
+
+
+.smt-name{
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    color: var(--third-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.smt-name:hover{
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+}
+
+.ion{
+    cursor: pointer;
+    position: absolute;
+    color: var(--fourth-color);
+    bottom: 0;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+.ion:hover{
+    color: var(--third-color);
+    font-size: 2.5rem;
+}
+
+.icon1{
+    left: 20px;
+}
+.icon2{
+    left: 60px;
+}
+
+.editNote{
+    padding: 10px;
+    cursor: pointer;
+    color: var(--fourth-color);
+    background: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    min-height: 200px;
+    transition: 0.3s;
+}
+.editNote:focus,.editNote:hover{
+    outline: 1px solid var(--third-color);
+}
+
+.img-error{
+    position: absolute;
+    color: var(--third-color);
+    bottom: -15px;
+}
+
+.inputFollow{
+    cursor: pointer;
+    padding: 5px;
+    color: var(--fourth-color);
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    background: none;
+}
+.inputFollow:focus,.inputFollow:hover{
+    border-bottom: 1px solid var(--third-color);
+}
+
+.follow{
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+}
+
+@media only screen and (max-width: 430px){
+    .me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bi{
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: 28px;
+        height: 28px;
+    }
+    .inputFollow{
+        margin-bottom: 20px;
+        width: 300px;
+        height: 30px;
+    }
+
+    .follow-me{
+        height: 1100px;
+    }
+
+    .edit-branch , .edit-faculty{
+        width: 260px;
+        font-size: 1.5rem;
+    }
+}
